@@ -10,6 +10,7 @@ import com.amazonaws.services.sqs.model.Message
 import com.amazonaws.services.sqs.model.ReceiveMessageRequest
 import com.amazonaws.services.sqs.model.SendMessageBatchRequest
 import com.amazonaws.services.sqs.model.SendMessageBatchRequestEntry
+import com.amazonaws.services.sqs.model.SendMessageRequest
 import groovy.util.logging.Slf4j
 import org.elasticmq.rest.sqs.SQSRestServerBuilder
 import org.junit.jupiter.api.AfterAll
@@ -44,6 +45,9 @@ class apiTest {
             queueType = System.getProperty("queueType").toLowerCase()
         }
 
+        log.info "running all cases against $queueType..."
+
+        // initialise AWS SQS Client
         if (queueType == 'aws') {
             log.info "initializing AWS SQS client..."
             endpoint = "https://sqs.ap-southeast-2.amazonaws.com"
