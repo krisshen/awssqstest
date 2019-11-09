@@ -58,8 +58,13 @@ Test report will be generated to `build/reports/tests/test/index.html` file afte
     * Performance test scenario may also be considered
 * If we want to cover HTTP APIs without using AWS SDK, plain HTTP request tests would also be required to cover all scenarios
 
-# AWS APIs Reference
+# Reference
+
+## AWS SQS APIs
 * https://docs.aws.amazon.com/zh_cn/AWSSimpleQueueService/latest/APIReference/API_Operations.html
 * https://docs.aws.amazon.com/zh_cn/AWSSimpleQueueService/latest/APIReference/API_Types.html
 * https://docs.aws.amazon.com/zh_cn/AWSSimpleQueueService/latest/APIReference/CommonParameters.html
 * https://docs.aws.amazon.com/zh_cn/AWSSimpleQueueService/latest/APIReference/CommonErrors.html
+
+# Elastic MQ
+https://github.com/softwaremill/elasticmq
