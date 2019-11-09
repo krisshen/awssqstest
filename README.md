@@ -48,14 +48,15 @@ Test report will be generated to `build/reports/tests/test/index.html` file afte
 
 # To Do
 * Extract common test functions into utility class
+* Decouple test variables into separate configuration files
 * Add Spring's dependency injection function
 * Upgrade to Allure test report
 * Refactor with JUnit 5 annotation features
 * Test Cases
-    * More operation APIs test cases to be covered (e.g. AddPermission...)
+    * More operation APIs test cases to be covered (e.g. AddPermission, PurgeQueue, TagQueue etc...)
     * More test cases to be covered for error handling scenarios (Exception APIs)
     * Performance test scenario may also be considered
-
+* If we want to cover HTTP APIs without using AWS SDK, plain HTTP request tests would also be required to cover all scenarios
 
 # AWS APIs Reference
 * https://docs.aws.amazon.com/zh_cn/AWSSimpleQueueService/latest/APIReference/API_Operations.html
